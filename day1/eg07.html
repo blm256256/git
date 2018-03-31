@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3径向渐变</title>
+    <style type="text/css">
+        /*设置div公共样式*/
+        
+        div {
+            width: 200px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            color: white;
+        }
+        
+        #div1 {
+            margin-bottom: 10px;
+            background: -webkit-radial-gradient(orange, blue);
+            background: -moz-radial-gradient(orange, blue);
+        }
+        
+        #div2 {
+            background: -webkit-radial-gradient(right bottom, circle, orange, blue);
+            background: -moz-radial-gradient(right bottom, circle, orange, blue);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">默认值（ellipse）</div>
+    <div id="div2">circle</div>
+</body>
+
+</html>

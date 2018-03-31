@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span::after {
+            display: inline;
+            content: attr(data-val);
+        }
+    </style>
+</head>
+
+<body>
+    <span data-val="world!" id="span1">hello,</span>
+    <script>
+        var span1 = document.getElementById('span1');
+        span1.dataset.val = "你好";
+    </script>
+</body>
+
+</html>
